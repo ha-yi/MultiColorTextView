@@ -1,5 +1,6 @@
-**MultiColorTextView**
+**MultiColorTextView** [ ![Download](https://api.bintray.com/packages/ha-yi/MultiColorTextView/MultiColorTextView/images/download.svg) ](https://bintray.com/ha-yi/MultiColorTextView/MultiColorTextView/_latestVersion)
 --
+
 This is a simple library to display text with multicolor.
 
 
