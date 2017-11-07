@@ -9,9 +9,32 @@ This is a simple library to display text with multicolor.
 ![sample](sampledata/multicolor3.PNG "sample")
 
 
-Usage:
----
 
+
+**How to Install**
+---
+Add to your app module `build.gradle`
+```
+compile 'com.lombokcyberlab.android.multicolortextview:MultiColorTextView:1.0.0'
+```
+or for gradle 3.x
+```
+implementation 'com.lombokcyberlab.android.multicolortextview:MultiColorTextView:1.0.0'
+```
+
+or maven add to your pom file:
+```xml
+<dependency>
+  <groupId>com.lombokcyberlab.android.multicolortextview</groupId>
+  <artifactId>MultiColorTextView</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
+```
+
+
+Usage
+---
 **Using Color sheme**
 ```xml
 <com.lombokcyberlab.android.multicolortextview.MultiColorTextView
@@ -57,7 +80,7 @@ Then use it:
         app:textStyle="bold" />
 ```
 
-Available Options:
+Available Options
 ---
 Options       | Description  
 --- | ---
@@ -68,8 +91,6 @@ Options       | Description
 `app:textStyle` | only **bold** is available
 
  
-
-
 Limitation
 ---
 - Only displaying single line text (unwrapped).
