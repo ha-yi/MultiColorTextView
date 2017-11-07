@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.lombokcyberlab.android.multicolortextview.sample.MainActivity">
+
+    <com.lombokcyberlab.android.multicolortextview.MultiColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:text="Google Colors"
+        app:colorScheme="google"
+        app:textStyle="bold"
+        app:textSize="40"/>
+
+    <com.lombokcyberlab.android.multicolortextview.MultiColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:colorScheme="dark_red"
+        app:text="THE RED COLOR"
+        app:textSize="40"
+        app:textStyle="bold" />
+
+    <com.lombokcyberlab.android.multicolortextview.MultiColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:colors="@array/colorIndonesia"
+        app:text="MERAH PUTIH"
+        app:textSize="40"
+        app:textStyle="bold" />
+
+    <com.lombokcyberlab.android.multicolortextview.MultiColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:colors="@array/redNoosed"
+        app:text="RED NOSED DEER"
+        app:textSize="35"
+        app:textStyle="bold" />
+
+</LinearLayout>

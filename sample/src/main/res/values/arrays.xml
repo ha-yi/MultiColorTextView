@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="colorIndonesia">
+        <item>#FF0000</item>
+        <item>#FF0000</item>
+        <item>#FF0000</item>
+        <item>#FF0000</item>
+        <item>#FF0000</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+
+    </string-array>
+    <string-array name="redNoosed">
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FF0000</item>
+        <item>#FF0000</item>
+        <item>#FF0000</item>
+        <item>#FF0000</item>
+        <item>#FF0000</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+
+    </string-array>
+</resources>
