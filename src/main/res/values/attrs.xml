@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MultiColorTextView">
+        <attr name="colors" format="reference" />
+        <attr name="text" format="string" />
+        <attr name="textStyle" format="string" />
+        <attr name="textSize" format="float" />
+        <attr name="spacing" format="integer" />
+        <attr name="colorScheme" format="enum">
+            <enum name="lively" value="1"/>
+            <enum name="google" value="2"/>
+            <enum name="bootstrap" value="3"/>
+            <enum name="metro" value="4"/>
+            <enum name="dark_red" value="5"/>
+        </attr>
+    </declare-styleable>
+</resources>

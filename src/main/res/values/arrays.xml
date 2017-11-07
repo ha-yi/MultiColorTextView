@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lively">
+        <item>#99d2e3</item>
+        <item>#4fb0b8</item>
+        <item>#305fb0</item>
+        <item>#0e2e9f</item>
+        <item>#08286d</item>
+    </string-array>
+
+
+    <string-array name="google">
+        <item>#008744</item>
+        <item>#0057e7</item>
+        <item>#d62d20</item>
+        <item>#ffa700</item>
+        <item>#FFFFFF</item>
+    </string-array>
+
+    <string-array name="bootstrap">
+        <item>#d9534f</item>
+        <item>#f9f9f9</item>
+        <item>#5bc0de</item>
+        <item>#5cb85c</item>
+        <item>#428bca</item>
+    </string-array>
+
+    <string-array name="metro">
+        <item>#d11141</item>
+        <item>#00b159</item>
+        <item>#00aedb</item>
+        <item>#f37735</item>
+        <item>#ffc425</item>
+    </string-array>
+
+    <string-array name="dark_red">
+        <item>#ff0000</item>
+        <item>#bf0000</item>
+        <item>#800000</item>
+        <item>#400000</item>
+        <item>#000000</item>
+    </string-array>
+</resources>
