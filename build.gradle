@@ -1,5 +1,39 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.novoda.bintray-release'
+
+//ext {
+//    bintrayRepo = 'MultiColorTextView'
+//    bintrayName = 'MultiColorTextView'
+//
+//    publishedGroupId = 'com.lombokcyberlab.android.multicolortextview'
+//    libraryName = 'MultiColorTextView'
+//    artifact = 'MultiColorTextView'
+//
+//    libraryDescription = 'A widget to create multicolor text in single line (unwrapped)'
+//
+//    siteUrl = 'https://github.com/ha-yi/MultiColorTextView'
+//    gitUrl = 'https://github.com/ha-yi/MultiColorTextView.git'
+//
+//    libraryVersion = '1.0.0'
+//
+//    developerId = 'hayi'
+//    developerName = 'Hayi Nukman'
+//    developerEmail = 'hayi.nkm@gmail.com'
+//
+//    licenseName = 'The Apache Software License, Version 2.0'
+//    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//    allLicenses = ["Apache-2.0"]
+//}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.7.0'
+    }
+}
 
 android {
     compileSdkVersion 26
@@ -35,3 +69,19 @@ dependencies {
 repositories {
     mavenCentral()
 }
+
+
+publish {
+    userOrg = 'ha-yi'
+//    bintrayRepo = 'MultiColorTextView'
+//    bintrayName = 'MultiColorTextView'
+    repoName="MultiColorTextView"
+    groupId = 'com.lombokcyberlab.android.multicolortextview'
+    artifactId = 'MultiColorTextView'
+    publishVersion = '1.0.0'
+    desc = 'Simple MultiColorTextView '
+    website = 'https://github.com/ha-yi/MultiColorTextView'
+}
+
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
