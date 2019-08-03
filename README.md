@@ -96,3 +96,5 @@ Limitation
 - Only displaying single line text (unwrapped).
 - Limited color scheme
 - one color in colors array for one character.
+
+<a href="https://www.buymeacoffee.com/hayi" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee"></a>
