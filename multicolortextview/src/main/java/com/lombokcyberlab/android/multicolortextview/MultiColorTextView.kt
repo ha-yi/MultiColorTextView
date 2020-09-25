@@ -45,11 +45,11 @@ class MultiColorTextView : LinearLayoutCompat {
         orientation = HORIZONTAL
     }
 
-    var textStyle: String = ""
-    var colors = Array<CharSequence>(0) { i -> i.toString() }
-    var size: Float = dp(12)
+    private var textStyle: String = ""
+    private var colors = Array<CharSequence>(0) { i -> i.toString() }
+    private var size: Float = dp(12)
     private var _text: String = ""
-    var text: String
+    private var text: String
         set(value) {
             _text = value
             renderText()
