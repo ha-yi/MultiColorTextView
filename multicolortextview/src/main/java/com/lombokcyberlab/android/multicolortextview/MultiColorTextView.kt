@@ -3,25 +3,23 @@ package com.lombokcyberlab.android.multicolortextview
 import android.content.Context
 import android.graphics.Color
 import android.graphics.Typeface
-
-import androidx.appcompat.widget.LinearLayoutCompat
 import android.util.AttributeSet
-import android.util.Log
 import android.util.TypedValue
 import android.widget.TextView
+import androidx.appcompat.widget.LinearLayoutCompat
 
 /**
  * Created by deLaCious on 11/6/2017.
  */
-class MultiColorTextView: LinearLayoutCompat {
+class MultiColorTextView : LinearLayoutCompat {
     constructor(context: Context) : this(context, null)
     constructor(context: Context, attrs: AttributeSet?) : this(context, attrs, 0)
 
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
         val arr = context.theme.obtainStyledAttributes(attrs, R.styleable.MultiColorTextView, 0, 0)
         try {
-            colors =  arr.getTextArray(R.styleable.MultiColorTextView_colors)
-        } catch (e:Exception) {
+            colors = arr.getTextArray(R.styleable.MultiColorTextView_colors)
+        } catch (e: Exception) {
             e.printStackTrace()
         }
         try {
@@ -37,29 +35,29 @@ class MultiColorTextView: LinearLayoutCompat {
                 })
             }
 //            size = arr.getDimensionPixelSize(R.styleable.MultiColorTextView_textSize, 12).toFloat()
-        } catch (e:Exception) {
+        } catch (e: Exception) {
             e.printStackTrace()
             try {
-                colors =  arr.getTextArray(R.styleable.MultiColorTextView_colors)
-            } catch (e:Exception) {
+                colors = arr.getTextArray(R.styleable.MultiColorTextView_colors)
+            } catch (e: Exception) {
                 e.printStackTrace()
             }
         }
 
         try {
             size = arr.getFloat(R.styleable.MultiColorTextView_textSize, 12f)
-        } catch (e:Exception) {
+        } catch (e: Exception) {
             e.printStackTrace()
         }
         try {
-            textStyle = arr.getString(R.styleable.MultiColorTextView_textStyle)?:""
+            textStyle = arr.getString(R.styleable.MultiColorTextView_textStyle) ?: ""
 
-        } catch (e:Exception) {
+        } catch (e: Exception) {
             e.printStackTrace()
         }
 
         try {
-            text = arr.getString(R.styleable.MultiColorTextView_text)?:""
+            text = arr.getString(R.styleable.MultiColorTextView_text) ?: ""
         } catch (e: Exception) {
             e.printStackTrace()
         }
@@ -71,11 +69,11 @@ class MultiColorTextView: LinearLayoutCompat {
         orientation = HORIZONTAL
     }
 
-    var textStyle:String = ""
-    var colors = Array<CharSequence>(0,{ i -> i.toString()})
-    var size:Float = dp(12)
-    var _text:String = ""
-    var text:String
+    var textStyle: String = ""
+    var colors = Array<CharSequence>(0, { i -> i.toString() })
+    var size: Float = dp(12)
+    var _text: String = ""
+    var text: String
         set(value) {
             _text = value
             renderText()
@@ -102,5 +100,5 @@ class MultiColorTextView: LinearLayoutCompat {
         }
     }
 
-    private fun dp(d:Int) = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, d.toFloat(), resources.displayMetrics)
+    private fun dp(d: Int) = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, d.toFloat(), resources.displayMetrics)
 }

@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#333"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.lombokcyberlab.android.multicolortextview.sample.MainActivity">
 
     <com.lombokcyberlab.android.multicolortextview.MultiColorTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        app:text="Google Colors"
         app:colorScheme="google"
-        app:textStyle="bold"
-        app:textSize="40"/>
+        app:text="Google Colors"
+        app:textSize="40"
+        app:textStyle="bold" />
 
     <com.lombokcyberlab.android.multicolortextview.MultiColorTextView
         android:layout_width="wrap_content"
