@@ -12,7 +12,6 @@
     <com.lombokcyberlab.android.multicolortextview.MultiColorTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         app:colorScheme="google"
         app:text="Google Colors"
         app:textSize="40"
@@ -29,7 +28,6 @@
     <com.lombokcyberlab.android.multicolortextview.MultiColorTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         app:colors="@array/colorIndonesia"
         app:text="MERAH PUTIH"
         app:textSize="40"
@@ -38,7 +36,6 @@
     <com.lombokcyberlab.android.multicolortextview.MultiColorTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         app:colors="@array/redNoosed"
         app:text="RED NOSED DEER"
         app:textSize="35"
