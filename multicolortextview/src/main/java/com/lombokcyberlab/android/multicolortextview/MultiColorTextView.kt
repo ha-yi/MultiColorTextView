@@ -52,15 +52,15 @@ class MultiColorTextView: LinearLayoutCompat {
             e.printStackTrace()
         }
         try {
-            textStyle = arr.getString(R.styleable.MultiColorTextView_textStyle)
+            textStyle = arr.getString(R.styleable.MultiColorTextView_textStyle)?:""
 
         } catch (e:Exception) {
             e.printStackTrace()
         }
 
         try {
-            text = arr.getString(R.styleable.MultiColorTextView_text)
-        } catch (e:Exception) {
+            text = arr.getString(R.styleable.MultiColorTextView_text)?:""
+        } catch (e: Exception) {
             e.printStackTrace()
         }
 
